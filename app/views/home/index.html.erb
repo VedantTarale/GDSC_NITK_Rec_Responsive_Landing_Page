@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "main.css" %>
+<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+<div class="image">
+    <div class="card text-center">
+    <div class="card-header">
+        Welcome to PokeWiki!
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Search For A Pokemon</h5>
+        <p class="card-text">Enter name of the pokemon you are looking for in the field below</p>
+        <div class="form">
+            <%= bootstrap_form_with url: search_path, method: :post do |f| %>
+            <%= f.text_field :name , placeholder: "Enter name here" %>
+            <%= f.submit "Search" %>
+            <% end %>
+        </div>
+    </div>
+    </div>
+</div>
