@@ -8,4 +8,8 @@ class HomeController < ApplicationController
       @result = JSON.parse(response)
     end
   end
+  def about
+  end
+  def connect
+  end
 end

@@ -32,3 +32,11 @@ a{
     color: white;
     text-decoration: none;
 }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.row{
+    padding: 0.25vh 0;
+}
