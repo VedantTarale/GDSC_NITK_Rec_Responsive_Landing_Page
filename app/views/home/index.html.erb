@@ -14,7 +14,7 @@
             <p class="card-text">Enter name of the pokemon you are looking for in the field below</p>
             <div class="form">
                 <%= bootstrap_form_with url: search_path, method: :post do |f| %>
-                <%= f.text_field :name , placeholder: "Enter name here" %>
+                <%= f.text_field :name , placeholder: "Enter name here", required: true %>
                 <%= f.submit "Search", class: "btn btn-primary"%>
                 <% end %>
             </div>
