@@ -1,24 +1,46 @@
-# README
+<h3><strong>Setup</strong></h3>
+<ul>
+<li>Fork this repository</li>
+<li>
+Clone the forked copy
+</li>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+git clone https://github.com/<your_user_name>/GDSC_NITK_Rec_Responsive_Landing_Page.git
+```
 
-Things you may want to cover:
+or
 
-* Ruby version
+```
+git clone git@github.com:VedantTarale/GDSC_NITK_Rec_Responsive_Landing_Page.git
+```
 
-* System dependencies
+<li>Open the directory</li>
 
-* Configuration
+```
+cd GDSC_NITK_Rec_Responsive_Landing_Page
+```
 
-* Database creation
+<li>Checkout to a new branch and get coding \^o^/</li>
 
-* Database initialization
+```
+git checkout -b <branch_name>
+```
 
-* How to run the test suite
+</ul>
 
-* Services (job queues, cache servers, search engines, etc.)
+<hr>
 
-* Deployment instructions
+<h3><strong>How to install Ruby on Rails</strong></h3>
 
-* ...
+<strong>Linux</strong>
+
+```
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rvm-on-ubuntu-20-04
+```
+
+<strong>Windows</strong>
+
+```
+https://cloudinfrastructureservices.co.uk/how-to-install-ruby-on-rails-windows-10-11/
+```
