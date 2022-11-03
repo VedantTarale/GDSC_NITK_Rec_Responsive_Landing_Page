@@ -27,6 +27,12 @@ cd GDSC_NITK_Rec_Responsive_Landing_Page
 git checkout -b <branch_name>
 ```
 
+<li>Enter the following command in the terminal opened in the project directory to start the local server</li>
+
+```
+rails s -p 3000
+```
+
 </ul>
 
 <hr>
