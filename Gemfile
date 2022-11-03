@@ -25,7 +25,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 5.2.2'
 gem 'bootstrap_form'
 
-gem 'excon'
 gem 'poke-api-v2'
 
 group :development, :test do

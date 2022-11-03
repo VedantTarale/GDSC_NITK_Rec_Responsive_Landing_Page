@@ -13,14 +13,14 @@
  *= require_tree .
  *= require_self
  */
-.nav{
+.nav-main{
     background-color: #26094a;
     padding: 5px;
 }
-.nav-link{
+.nav-link-main{
     color:white;
 }
-.nav-link:hover{
+.nav-link-main:hover{
     color: red;
 }
 .row{
@@ -32,11 +32,9 @@ a{
     color: white;
     text-decoration: none;
 }
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 .row{
     padding: 0.25vh 0;
+}
+.fa{
+    font-size: 32px;
 }

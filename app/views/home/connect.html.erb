@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "main.css" %>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 panel" id="panel-1">
+        <i class="fa fa-envelope" id="asdf"></i>
+        <div>
+            <%=mail_to "vedanttarale10@gmail.com", "Email", class:"btn btn-danger" %>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 panel" id="panel-2">
+        <i class="fa fa-linkedin-square"></i>
+        <div>
+            <%= link_to "LinkedIn", "https://www.linkedin.com/in/vedant-tarale-802528173/", class:"btn btn-secondary" %>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 panel" id="panel-3">
+        <i class="fa fa-github"></i>
+        <div>
+            <%= link_to "GitHub", "https://github.com/VedantTarale", class:"btn btn-primary" %>
+        </div>
+    </div>
+</div>

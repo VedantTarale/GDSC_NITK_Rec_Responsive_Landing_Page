@@ -1,0 +1,20 @@
+<div class="table-container">
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Stat Name</th>
+      <th scope="col">Base Value</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <% @result['stats'].each_with_index do |data,index| %>
+        <tr>
+            <td><%= index+1 %></td>
+            <td><%= data['stat']['name'] %></td>
+            <td><%= data['base_stat'] %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

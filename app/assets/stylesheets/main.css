@@ -1,12 +1,20 @@
 .image{
-    background-image: url("../mikel-DypO_XgAE4Y-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
-    height: 89vh;
+    height: 88vh;
 }
-.card{
+#index-div{
+    background-image: url("../mikel-DypO_XgAE4Y-unsplash.jpg");
+}
+#search-div{
+    background-image: url("../thimo-pedersen-dip9IIwUK6w-unsplash.jpg")
+}
+#about-div{
+    background-image: url("../jason-hudson-EUF2azfNtm0-unsplash.jpg");
+}
+.half{
     width: 50vw;
     min-width: 230px;
     background: none;
@@ -17,7 +25,8 @@
 .card-header{
     font-family: 'Pokemon Solid', sans-serif;
     font-size: xxx-large;
-    color: rgb(181, 40, 40);
+    color: #ffcd05;
+    backdrop-filter: blur(12px); 
 }
 .form{
     display: flex;
@@ -28,4 +37,47 @@
 }
 .card-text{
     color:black;
+}
+.table-container{
+    height: 59vh;
+    overflow: auto;
+}
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color:black;
+}
+.nav-pills{
+    justify-content: center;
+}
+.info{
+    font-size: x-large;
+}
+.panel{
+    height: 88vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#panel-1{
+    background-color: rgb(179, 52, 77);
+}
+#panel-1:hover{
+    background-color: rgb(130, 14, 37);
+}
+#panel-2{
+    background-color: slategray;
+}
+#panel-2:hover{
+    background-color: rgb(59, 67, 74);
+}
+#panel-3{
+    background-color: slateblue;
+}
+#panel-3:hover{
+    background-color: rgb(72, 62, 139);
+}
+.fa{
+    font-size: 20rem !important;
 }

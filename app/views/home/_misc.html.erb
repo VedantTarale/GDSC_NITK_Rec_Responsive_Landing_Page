@@ -1,0 +1,33 @@
+<div class="table-container">
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+        <td>Base Experience</td>
+        <td><%= @result['base_experience'] %></td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <% type_string = " | " %>
+        <% @result['types'].each do |data| %>
+            <% type_string += data['type']['name'].capitalize() %>
+            <% type_string += " | "%>
+        <% end %>
+        <td><%= type_string %></td>
+    </tr>
+    <tr>
+        <td>Height</td>
+        <td><%= @result['height'] %> Units</td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td><%= @result['weight'] %> Units</td>
+    </tr>
+  </tbody>
+</table>
+</div>

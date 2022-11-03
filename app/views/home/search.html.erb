@@ -1,0 +1,32 @@
+<div class="image" id="search-div">
+    <div class="card text-center half">
+        <div class="card-header">
+            <%= @result['name'].capitalize() %>
+        </div>
+        <div class="card-body">
+            <ul class="nav nav-pills">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#attacks" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Attacks</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#stats" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Stats</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#misc" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Misc</button>
+                </li>
+            </ul>
+            <hr>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="attacks" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <%= render partial: "attacks" %>
+                </div>
+                <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <%= render partial: "stats" %>
+                </div>
+                <div class="tab-pane fade" id="misc" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <%= render partial: "misc" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

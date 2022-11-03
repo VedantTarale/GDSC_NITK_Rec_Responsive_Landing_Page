@@ -4,8 +4,12 @@ class HomeController < ApplicationController
   def search
     require 'poke-api-v2'
     if params[:name]
-      response = PokeApi.get(pokemon: params[:name]).to_json
-      @result = JSON.parse(response)
+      begin
+        response = PokeApi.get(pokemon: params[:name].downcase).to_json
+        @result = JSON.parse(response)
+      rescue
+        redirect_to main_path(notice: 'Sorry we encountered an error. Please check the name entered.')
+      end
     end
   end
   def about
